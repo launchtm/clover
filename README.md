@@ -1,7 +1,11 @@
+
+---
+
+```markdown
 # 🍀 Clover Client
 
 <p align="center">
-  <img src="https://via.placeholder.com/150" alt="Clover Logo" width="150"/>
+  <img src="clover.png" alt="Clover Logo" width="150"/>
 </p>
 
 <p align="center">
@@ -12,7 +16,6 @@
   <img src="https://img.shields.io/badge/Minecraft-Java%20Edition-green?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Loader-Fabric-orange?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/v/release/yourusername/clover?style=for-the-badge"/>
 </p>
 
 ---
@@ -21,10 +24,6 @@
 - [✨ Features](#-features)
 - [📦 Requirements](#-requirements)
 - [🛠️ Installation](#️-installation)
-  - [1. Install Fabric Loader](#1-install-fabric-loader)
-  - [2. Install Fabric API](#2-install-fabric-api)
-  - [3. Install Clover](#3-install-clover)
-  - [🎮 Launch the Game](#-launch-the-game)
 - [🎮 Getting Started](#-getting-started)
 - [📁 Project Structure](#-project-structure)
 - [🔄 Updating](#-updating)
@@ -32,8 +31,6 @@
 - [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 - [⚠️ Disclaimer](#️-disclaimer)
-- [💬 Support](#-support)
-- [🙏 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -41,29 +38,27 @@
 
 | Category | Description |
 |---------|-------------|
-| 🧩 Modular Design | Enable or disable features to match your playstyle. |
-| 🏃 Movement Enhancements | Improved navigation and traversal options. |
-| ⚔️ Combat Assistance | Smoother and more responsive engagements. |
-| 🌍 Exploration Utilities | Increased environmental awareness. |
-| 🚀 Performance Optimizations | Lightweight and efficient for stable gameplay. |
-| 🎨 Clean GUI | Intuitive interface with extensive customization. |
-| 🔄 Regular Updates | Continuous improvements and new features. |
+| 🧩 Modular Design | Toggle features based on your playstyle |
+| 🏃 Movement | Enhanced navigation and mobility |
+| ⚔️ Combat | Smoother and more responsive interactions |
+| 🌍 Utility | Better awareness and convenience tools |
+| 🚀 Performance | Optimized for stable gameplay |
+| 🎨 GUI | Clean and customizable interface |
 
 ---
 
 ## 📦 Requirements
 
-Before installing Clover, ensure you have the following:
+Make sure you’re not running this on a toaster:
 
-- **Minecraft: Java Edition**
-- **Java 17 or newer**
-- **Fabric Loader**
-- **Fabric API**
+- Minecraft: Java Edition
+- Java 17+
+- Fabric Loader
+- Fabric API
 
-### 🔗 Useful Links
-- **Fabric Loader:** https://fabricmc.net/use/installer/
-- **Fabric API (CurseForge):** https://www.curseforge.com/minecraft/mc-mods/fabric-api
-- **Fabric API (Modrinth):** https://modrinth.com/mod/fabric-api
+### 🔗 Downloads
+- Fabric Loader → https://fabricmc.net/use/installer/
+- Fabric API → https://modrinth.com/mod/fabric-api
 
 ---
 
@@ -71,50 +66,162 @@ Before installing Clover, ensure you have the following:
 
 ### 1. Install Fabric Loader
 
-1. Download the Fabric Installer from the official website.
-2. Run the installer.
-3. Select the **Minecraft version** compatible with Clover.
-4. Ensure **Install Client** is selected.
-5. Click **Install**.
-6. Open the Minecraft Launcher and select the **Fabric** profile.
+1. Download Fabric Installer
+2. Run it
+3. Select your Minecraft version
+4. Install client
+5. Launch Minecraft once with Fabric
+
+---
 
 ### 2. Install Fabric API
 
-1. Download the latest **Fabric API** matching your Minecraft version.
-2. Navigate to your Minecraft `mods` folder:
+Put the Fabric API `.jar` into your mods folder:
 
-| OS | Path |
-|----|------|
-| **Windows** | `%appdata%\.minecraft\mods` |
-| **macOS** | `~/Library/Application Support/minecraft/mods` |
-| **Linux** | `~/.minecraft/mods` |
+```
 
-3. Create the `mods` folder if it does not exist.
-4. Place the **Fabric API** `.jar` file into this folder.
+Windows: %appdata%.minecraft\mods
+Mac: ~/Library/Application Support/minecraft/mods
+Linux: ~/.minecraft/mods
+
+```
+
+If the folder ain’t there, make it. Not complicated.
+
+---
 
 ### 3. Install Clover
 
-1. Download the latest release from the **Releases** page.
-2. Place the `Clover-x.x.x.jar` file into the `mods` folder.
-3. Ensure both **Fabric API** and **Clover** are present.
+1. Download the latest Clover release
+2. Drop the `.jar` into the `mods` folder
+3. Make sure Fabric API is also there
 
-### 🎮 Launch the Game
+---
 
-1. Open the **Minecraft Launcher**.
-2. Select the **Fabric** profile.
-3. Click **Play**.
-4. Clover should initialize automatically once the game loads.
+### ▶️ Launch
+
+- Open Minecraft Launcher  
+- Select Fabric profile  
+- Hit Play  
+- Clover loads automatically  
+
+If it doesn’t… you messed something up.
 
 ---
 
 ## 🎮 Getting Started
 
-### Opening the GUI
-- Press **Right Shift** (default key) to open the Clover interface.
-- Keybinds can be customized within the settings menu.
+### Open GUI
+- Press **Right Shift**
 
-### Configuration
-Clover generates its configuration folder on first launch:
+### Configure
+- Enable modules
+- Adjust settings
+- Everything saves automatically
 
-```text
+Config location:
+```
+
 .minecraft/config/clover/
+
+```
+
+---
+
+## 📁 Project Structure
+
+```
+
+Clover/
+├── src/
+├── gradle/
+├── build.gradle
+├── settings.gradle
+├── LICENSE
+└── README.md
+
+````
+
+---
+
+## 🔄 Updating
+
+1. Download latest version  
+2. Replace old `.jar`  
+3. Restart game  
+
+Boom. Done.
+
+---
+
+## ❗ Troubleshooting
+
+<details>
+<summary><b>Game crashing?</b></summary>
+
+- Check Java version (17+)
+- Match Fabric + Minecraft versions
+- Remove conflicting mods
+- Check logs
+
+</details>
+
+<details>
+<summary><b>Not showing up?</b></summary>
+
+- Wrong folder
+- Forgot Fabric API
+- Didn’t launch Fabric profile
+
+</details>
+
+<details>
+<summary><b>Low FPS?</b></summary>
+
+- Allocate more RAM
+- Update drivers
+- Remove heavy mods
+
+</details>
+
+---
+
+## 🤝 Contributing
+
+If you actually know what you’re doing:
+
+```bash
+git clone https://github.com/yourusername/clover.git
+git checkout -b feature/your-feature
+git commit -m "Add feature"
+git push origin feature/your-feature
+````
+
+Then open a PR.
+
+---
+
+## 📜 License
+
+Licensed under **GPL v3**.
+
+If you modify it, keep it open. Don’t be weird about it.
+
+---
+
+## ⚠️ Disclaimer
+
+> Clover is for educational purposes.
+> Use it responsibly.
+> If you get banned somewhere, that’s on you, not the project.
+
+---
+
+<p align="center">
+  🍀 Clover Client
+</p>
+```
+
+---
+
+
