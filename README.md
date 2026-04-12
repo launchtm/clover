@@ -175,29 +175,3 @@ Boom. Done.
 </details>
 
 ---
-
-## 🤝 Contributing
-
-If you actually know what you’re doing:
-
-```bash
-git clone https://github.com/yourusername/clover.git
-git checkout -b feature/your-feature
-git commit -m "Add feature"
-git push origin feature/your-feature
-
-Then open a PR.
-
-📜 License
-
-Licensed under GPL v3.
-
-If you modify it, keep it open. Don’t be weird about it.
-
-⚠️ Disclaimer
-
-Clover is for educational purposes.
-Use it responsibly.
-If you get banned somewhere, that’s on you, not the project.
-
-<p align="center"> 🍀 Clover Client </p> ```
