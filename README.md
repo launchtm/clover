@@ -24,7 +24,6 @@
 - [📁 Project Structure](#-project-structure)
 - [🔄 Updating](#-updating)
 - [❗ Troubleshooting](#-troubleshooting)
-- [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 - [⚠️ Disclaimer](#️-disclaimer)
 
@@ -173,5 +172,13 @@ Boom. Done.
 - Remove heavy mods
 
 </details>
+
+---
+
+## ⚠️ Disclaimer
+
+<p align="center">
+  <b>Clover is currently not open source, check again soon or contact for updates!</b>
+</p>
 
 ---
