@@ -27,9 +27,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Minecraft-Java%20Edition-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Loader-Fabric-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge"/>
+  <a href="https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-java-edition">
+    <img src="https://img.shields.io/badge/Minecraft-Java%20Edition-green?style=for-the-badge"/>
+  </a>
+
+  <a href="https://fabricmc.net/">
+    <img src="https://img.shields.io/badge/Loader-Fabric-orange?style=for-the-badge"/>
+  </a>
+
+  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge"/>
+  </a>
 </p>
 
 ---
