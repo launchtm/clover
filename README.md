@@ -27,9 +27,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-java-edition">
-    <img src="https://img.shields.io/badge/Minecraft-Java%20Edition-green?style=for-the-badge"/>
+  <a href="https://www.minecraft.net/en-us/about-minecraft">
+    <img src="https://img.shields.io/badge/Minecraft-About%20Page-green?style=for-the-badge"/>
   </a>
+</p>
 
   <a href="https://fabricmc.net/">
     <img src="https://img.shields.io/badge/Loader-Fabric-orange?style=for-the-badge"/>
