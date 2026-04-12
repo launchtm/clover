@@ -1,133 +1,120 @@
-🍀 Clover Client
+# 🍀 Clover Client
 
-Clover is a modern and customizable Minecraft client designed to enhance gameplay with a wide range of quality-of-life features. Built on the Fabric modding platform, Clover focuses on performance, flexibility, and an intuitive user experience while remaining lightweight and easy to install.
+<p align="center">
+  <img src="https://via.placeholder.com/150" alt="Clover Logo" width="150"/>
+</p>
 
-✨ Features
-Modular Design – Enable or disable features to suit your playstyle.
-Enhanced Movement – Improved navigation and traversal options.
-Combat Assistance – Tools that provide smoother and more responsive engagements.
-World & Exploration Utilities – Increased environmental awareness and efficiency.
-Performance Optimizations – Lightweight and optimized for stable gameplay.
-Clean GUI – User-friendly interface with extensive configuration options.
-Regular Updates – Continuous improvements and new features.
-📦 Requirements
+<p align="center">
+  <b>A modern, lightweight Minecraft client focused on customization and performance.</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Minecraft-Java%20Edition-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Loader-Fabric-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/v/release/yourusername/clover?style=for-the-badge"/>
+</p>
+
+---
+
+## 📑 Table of Contents
+- [✨ Features](#-features)
+- [📦 Requirements](#-requirements)
+- [🛠️ Installation](#️-installation)
+  - [1. Install Fabric Loader](#1-install-fabric-loader)
+  - [2. Install Fabric API](#2-install-fabric-api)
+  - [3. Install Clover](#3-install-clover)
+  - [🎮 Launch the Game](#-launch-the-game)
+- [🎮 Getting Started](#-getting-started)
+- [📁 Project Structure](#-project-structure)
+- [🔄 Updating](#-updating)
+- [❗ Troubleshooting](#-troubleshooting)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [💬 Support](#-support)
+- [🙏 Acknowledgments](#-acknowledgments)
+
+---
+
+## ✨ Features
+
+| Category | Description |
+|---------|-------------|
+| 🧩 Modular Design | Enable or disable features to match your playstyle. |
+| 🏃 Movement Enhancements | Improved navigation and traversal options. |
+| ⚔️ Combat Assistance | Smoother and more responsive engagements. |
+| 🌍 Exploration Utilities | Increased environmental awareness. |
+| 🚀 Performance Optimizations | Lightweight and efficient for stable gameplay. |
+| 🎨 Clean GUI | Intuitive interface with extensive customization. |
+| 🔄 Regular Updates | Continuous improvements and new features. |
+
+---
+
+## 📦 Requirements
 
 Before installing Clover, ensure you have the following:
 
-Minecraft: Java Edition
-Java 17 or newer
-Fabric Loader
-Fabric API
-🔗 Useful Links
-Fabric Loader: https://fabricmc.net/use/installer/
-Fabric API (CurseForge): https://www.curseforge.com/minecraft/mc-mods/fabric-api
-Fabric API (Modrinth): https://modrinth.com/mod/fabric-api
-🛠️ Installation Guide
-Step 1: Install Fabric Loader
-Download the Fabric Installer from the official website.
-Run the installer.
-Select the Minecraft version compatible with Clover.
-Ensure "Install Client" is selected.
-Click Install.
-Launch the Minecraft Launcher and verify that a Fabric profile appears.
-Step 2: Install Fabric API
-Download the latest version of Fabric API matching your Minecraft version.
-Navigate to your Minecraft mods folder:
+- **Minecraft: Java Edition**
+- **Java 17 or newer**
+- **Fabric Loader**
+- **Fabric API**
 
-Windows:
+### 🔗 Useful Links
+- **Fabric Loader:** https://fabricmc.net/use/installer/
+- **Fabric API (CurseForge):** https://www.curseforge.com/minecraft/mc-mods/fabric-api
+- **Fabric API (Modrinth):** https://modrinth.com/mod/fabric-api
 
-%appdata%\.minecraft\mods
+---
 
-macOS:
+## 🛠️ Installation
 
-~/Library/Application Support/minecraft/mods
+### 1. Install Fabric Loader
 
-Linux:
+1. Download the Fabric Installer from the official website.
+2. Run the installer.
+3. Select the **Minecraft version** compatible with Clover.
+4. Ensure **Install Client** is selected.
+5. Click **Install**.
+6. Open the Minecraft Launcher and select the **Fabric** profile.
 
-~/.minecraft/mods
-If the mods folder does not exist, create it.
-Place the downloaded Fabric API .jar file into the mods folder.
-Step 3: Install Clover
-Download the latest release of Clover from the repository’s Releases page.
-Place the Clover-x.x.x.jar file into the same mods folder.
-Ensure both Fabric API and Clover are present in the folder.
-Step 4: Launch the Game
-Open the Minecraft Launcher.
-Select the Fabric profile.
-Click Play.
-Once in-game, Clover should initialize automatically.
-🎮 Getting Started
-Opening the GUI
-Press Right Shift (default key) to open the Clover interface.
-Keybinds can be customized within the settings menu.
-Enabling Features
-Open the GUI.
-Navigate through the available categories.
-Toggle modules on or off as desired.
-Adjust settings to personalize your experience.
-Configuration
+### 2. Install Fabric API
 
-Clover automatically generates a configuration folder on first launch:
+1. Download the latest **Fabric API** matching your Minecraft version.
+2. Navigate to your Minecraft `mods` folder:
 
+| OS | Path |
+|----|------|
+| **Windows** | `%appdata%\.minecraft\mods` |
+| **macOS** | `~/Library/Application Support/minecraft/mods` |
+| **Linux** | `~/.minecraft/mods` |
+
+3. Create the `mods` folder if it does not exist.
+4. Place the **Fabric API** `.jar` file into this folder.
+
+### 3. Install Clover
+
+1. Download the latest release from the **Releases** page.
+2. Place the `Clover-x.x.x.jar` file into the `mods` folder.
+3. Ensure both **Fabric API** and **Clover** are present.
+
+### 🎮 Launch the Game
+
+1. Open the **Minecraft Launcher**.
+2. Select the **Fabric** profile.
+3. Click **Play**.
+4. Clover should initialize automatically once the game loads.
+
+---
+
+## 🎮 Getting Started
+
+### Opening the GUI
+- Press **Right Shift** (default key) to open the Clover interface.
+- Keybinds can be customized within the settings menu.
+
+### Configuration
+Clover generates its configuration folder on first launch:
+
+```text
 .minecraft/config/clover/
-Settings are saved between sessions.
-Profiles can be backed up or shared.
-🔄 Updating Clover
-Download the latest version from the Releases page.
-Replace the old .jar file in the mods folder with the new one.
-Restart Minecraft to apply the update.
-❗ Troubleshooting
-Game Crashes on Launch
-Ensure you are using Java 17 or newer.
-Verify that the Minecraft, Fabric Loader, and Fabric API versions match.
-Remove any conflicting mods and try again.
-Check the logs/latest.log file for detailed error information.
-Clover Not Appearing In-Game
-Confirm that the .jar file is placed in the correct mods folder.
-Make sure the Fabric profile is selected in the launcher.
-Ensure Fabric API is installed.
-Performance Issues
-Allocate more RAM to Minecraft via the launcher.
-Disable unnecessary mods.
-Update graphics drivers.
-Consider using performance-enhancing mods such as Sodium (optional).
-📁 Project Structure
-Clover/
-├── src/
-├── gradle/
-├── build.gradle
-├── settings.gradle
-├── LICENSE
-└── README.md
-🤝 Contributing
-
-Contributions are welcome and appreciated.
-
-Fork the repository.
-
-Create a new branch:
-
-git checkout -b feature/YourFeature
-
-Commit your changes:
-
-git commit -m "Add: Description of feature"
-
-Push to your fork:
-
-git push origin feature/YourFeature
-Open a Pull Request describing your changes.
-📜 License
-
-This project is licensed under the GNU General Public License v3.0 (or your chosen license). See the LICENSE file for more details.
-
-⚠️ Disclaimer
-
-Clover is intended for educational and experimental purposes. Users are responsible for ensuring compliance with the terms of service of any servers they join. The developers assume no liability for misuse or potential consequences resulting from its use.
-
-💬 Support
-Issues: Use the GitHub Issues tab to report bugs or request features.
-Discussions: Join the community to share feedback and ideas.
-🌟 Acknowledgments
-The Fabric team for their robust and lightweight modding platform.
-The Minecraft modding community for continuous inspiration and support.
