@@ -9,19 +9,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/your-username/clover/releases">
+  <a href="https://github.com/launchtm/clover/releases">
     <img src="https://img.shields.io/badge/Download-Latest%20Release-green?style=for-the-badge"/>
   </a>
 
-  <a href="https://github.com/your-username/clover#installation">
+  <a href="https://github.com/launchtm/clover#installation">
     <img src="https://img.shields.io/badge/Docs-Installation-blue?style=for-the-badge"/>
   </a>
 
-  <a href="https://github.com/your-username/clover/issues">
+  <a href="https://github.com/launchtm/clover/issues">
     <img src="https://img.shields.io/badge/Support-Issues-red?style=for-the-badge"/>
   </a>
 
-  <a href="https://github.com/your-username/clover">
+  <a href="https://github.com/launchtm/clover">
     <img src="https://img.shields.io/badge/Source-GitHub-black?style=for-the-badge"/>
   </a>
 </p>
@@ -125,7 +125,7 @@ If the folder doesn’t exist, create it.
 - Hit Play  
 - Clover loads automatically  
 
-If it doesn’t work, it’s almost always your setup.
+If it doesn’t work, it’s your setup, not the client.
 
 ---
 
