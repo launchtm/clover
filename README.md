@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <b>A modern, lightweight Minecraft client focused on customization and performance.
-  Clover is currently not open source, check again soon or contact for updates!</b>
+  <b>A modern, lightweight Minecraft client focused on customization and performance.</b>
+  Clover is currently not open source, check again soon or contact for updates!
 </p>
 
 <p align="center">
