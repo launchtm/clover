@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # 🍀 Clover Client
 
 <p align="center">
@@ -78,13 +74,11 @@ Make sure you’re not running this on a toaster:
 
 Put the Fabric API `.jar` into your mods folder:
 
-```
 
 Windows: %appdata%.minecraft\mods
 Mac: ~/Library/Application Support/minecraft/mods
 Linux: ~/.minecraft/mods
 
-```
 
 If the folder ain’t there, make it. Not complicated.
 
@@ -120,17 +114,14 @@ If it doesn’t… you messed something up.
 - Everything saves automatically
 
 Config location:
-```
 
 .minecraft/config/clover/
 
-```
 
 ---
 
 ## 📁 Project Structure
 
-```
 
 Clover/
 ├── src/
@@ -140,7 +131,6 @@ Clover/
 ├── LICENSE
 └── README.md
 
-````
 
 ---
 
@@ -195,33 +185,19 @@ git clone https://github.com/yourusername/clover.git
 git checkout -b feature/your-feature
 git commit -m "Add feature"
 git push origin feature/your-feature
-````
 
 Then open a PR.
 
----
+📜 License
 
-## 📜 License
-
-Licensed under **GPL v3**.
+Licensed under GPL v3.
 
 If you modify it, keep it open. Don’t be weird about it.
 
----
+⚠️ Disclaimer
 
-## ⚠️ Disclaimer
+Clover is for educational purposes.
+Use it responsibly.
+If you get banned somewhere, that’s on you, not the project.
 
-> Clover is for educational purposes.
-> Use it responsibly.
-> If you get banned somewhere, that’s on you, not the project.
-
----
-
-<p align="center">
-  🍀 Clover Client
-</p>
-```
-
----
-
-
+<p align="center"> 🍀 Clover Client </p> ```
