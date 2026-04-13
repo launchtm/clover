@@ -1,7 +1,7 @@
 # 🍀 Clover Client
 
 <p align="center">
-  <img src="clover.png" alt="Clover Logo" width="150"/>
+  <img src="images/clover.png" alt="Clover Logo" width="150"/>
 </p>
 
 <p align="center">
