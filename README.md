@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/launchtm/clover/releases">
-    <img src="https://img.shields.io/badge/Download-Latest%20Release-green?style=for-the-badge"/>
+  <a href="https://github.com/launchtm/clover/releases/download/v7.53-MC26.1/CloverSetup.exe">
+    <img src="https://img.shields.io/badge/Download-CloverSetup.exe-green?style=for-the-badge"/>
   </a>
 
   <a href="https://github.com/launchtm/clover#installation">
@@ -28,7 +28,7 @@
 
 <p align="center">
   <a href="https://www.minecraft.net/en-us/about-minecraft">
-    <img src="https://img.shields.io/badge/Minecraft-About%20Page-green?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Minecraft-26.1-green?style=for-the-badge"/>
   </a>
 
   <a href="https://fabricmc.net/">
@@ -70,70 +70,88 @@
 
 ## 📦 Requirements
 
-Make sure you’re not running this on a toaster:
+- Minecraft: Java Edition 26.1
+- Java 17+
+- Windows (the installer is Windows-only)
 
-- Minecraft: Java Edition  
-- Java 17+  
-- Fabric Loader  
-- Fabric API  
-
-### 🔗 Downloads
-- Fabric Loader → https://fabricmc.net/use/installer/  
-- Fabric API → https://modrinth.com/mod/fabric-api  
+> Fabric Loader and Fabric API are installed automatically by the installer. You do not need to download them separately.
 
 ---
 
 ## 🛠️ Installation
 
-### 1. Install Fabric Loader
+### ⚡ Recommended — CloverSetup.exe
 
-1. Download Fabric Installer  
-2. Run it  
-3. Select your Minecraft version  
-4. Install client  
-5. Launch Minecraft once with Fabric  
+**[Download CloverSetup.exe](https://github.com/launchtm/clover/releases/download/v7.53-MC26.1/CloverSetup.exe)**
+
+CloverSetup is a small installer wizard that automates the entire setup. It handles Fabric, Fabric API, and Clover Client in one go.
+
+#### What the installer does, step by step:
+
+**1. Choose folder**
+The installer defaults to:
+```
+C:\Users\<you>\AppData\Roaming\.minecraft\mods
+```
+You can point it at either your `mods` folder or the parent `.minecraft` folder — it figures out the rest.
+
+**2. Review**
+Before installing, it shows you exactly what it's about to do:
+- Install Fabric Loader
+- Copy Fabric API into your mods folder
+- Copy Clover Client into your mods folder
+- Rename the Minecraft Launcher profile to **Clover Launcher**
+
+**3. Download & verify**
+The installer downloads and SHA-256 verifies three files before doing anything:
+| File | Version |
+|------|---------|
+| `fabric-installer-1.1.1.exe` | Fabric Installer |
+| `fabric-api-0.144.3+26.1.jar` | Fabric API |
+| `clovermenu-7.53-MC26.1.jar` | Clover Client |
+
+**4. Fabric setup**
+Runs the Fabric installer silently:
+```
+client -dir <minecraft-folder> -mcversion 26.1 -loader 0.18.5
+```
+It also ensures `launcher_profiles.json` exists and strips any UTF-8 BOM that would cause Fabric's parser to fail.
+
+**5. Rename launcher profile**
+Edits `launcher_profiles.json` to rename the Fabric profile to **Clover Launcher** in your Minecraft Launcher. The internal Fabric version ID is left untouched.
+
+**6. Install mods**
+Copies `fabric-api-0.144.3+26.1.jar` and `clovermenu-7.53-MC26.1.jar` into your mods folder.  
+Any older Clover or Fabric API jars are backed up to:
+```
+.minecraft\mods\_clover-installer-backup\<timestamp>
+```
+
+**7. Finish**
+Click **Finish** and Minecraft Launcher opens automatically. Select **Clover Launcher** and hit Play.
 
 ---
 
-### 2. Install Fabric API
+### 🔧 Manual Installation (advanced)
 
-Put the Fabric API `.jar` into your mods folder:
+If you prefer to install without the setup wizard:
 
-Windows:
+**Requirements:**
+- Fabric Loader → https://fabricmc.net/use/installer/
+- Fabric API → https://modrinth.com/mod/fabric-api
 
-%appdata%.minecraft\mods
+1. Install Fabric Loader for Minecraft 26.1
+2. Put `fabric-api-0.144.3+26.1.jar` into your mods folder
+3. Put `clovermenu-7.53-MC26.1.jar` into your mods folder
+4. Launch Minecraft with the Fabric profile
 
+**Mods folder locations:**
 
-Mac:
-
-~/Library/Application Support/minecraft/mods
-
-
-Linux:
-
-~/.minecraft/mods
-
-
-If the folder doesn’t exist, create it.
-
----
-
-### 3. Install Clover
-
-1. Download the latest Clover release  
-2. Drop the `.jar` into the `mods` folder  
-3. Make sure Fabric API is also installed  
-
----
-
-### ▶️ Launch
-
-- Open Minecraft Launcher  
-- Select Fabric profile  
-- Hit Play  
-- Clover loads automatically  
-
-If it doesn’t work, it’s your setup, not the client.
+| OS | Path |
+|----|------|
+| Windows | `%appdata%\.minecraft\mods` |
+| Mac | `~/Library/Application Support/minecraft/mods` |
+| Linux | `~/.minecraft/mods` |
 
 ---
 
@@ -143,20 +161,20 @@ If it doesn’t work, it’s your setup, not the client.
 - Press **Right Shift**
 
 ### Configure
-- Enable modules  
-- Adjust settings  
-- Everything saves automatically  
+- Enable modules
+- Adjust settings
+- Everything saves automatically
 
 Config location:
-
+```
 .minecraft/config/clover/
-
+```
 
 ---
 
 ## 📁 Project Structure
 
-
+```
 Clover/
 ├── src/
 ├── gradle/
@@ -164,47 +182,57 @@ Clover/
 ├── settings.gradle
 ├── LICENSE
 └── README.md
-
+```
 
 ---
 
 ## 🔄 Updating
 
-1. Download latest version  
-2. Replace old `.jar`  
-3. Restart game  
+**With the installer:** Re-run `CloverSetup.exe`. It backs up your existing jars and installs the latest version.
 
-Done.
+**Manually:**
+1. Download the latest release
+2. Replace the old `clovermenu-*.jar` in your mods folder
+3. Restart the game
 
 ---
 
 ## ❗ Troubleshooting
 
 <details>
-<summary><b>Game crashing?</b></summary>
+<summary><b>Installer not working?</b></summary>
 
-- Check Java version (17+)  
-- Match Fabric + Minecraft versions  
-- Remove conflicting mods  
-- Check logs  
+- Make sure you're on Windows
+- Run as Administrator if you get a permissions error
+- Check that Minecraft has been launched at least once so `launcher_profiles.json` exists
 
 </details>
 
 <details>
-<summary><b>Not showing up?</b></summary>
+<summary><b>Game crashing?</b></summary>
 
-- Wrong mods folder  
-- Forgot Fabric API  
-- Didn’t launch Fabric profile  
+- Check Java version (17+)
+- Make sure Fabric Loader version matches Minecraft 26.1
+- Remove conflicting mods
+- Check logs in `.minecraft/crash-reports/`
+
+</details>
+
+<details>
+<summary><b>Clover not showing up in-game?</b></summary>
+
+- Confirm you launched the **Clover Launcher** profile, not vanilla
+- Check that both `fabric-api-*.jar` and `clovermenu-*.jar` are in your mods folder
+- Fabric API is required — Clover won't load without it
 
 </details>
 
 <details>
 <summary><b>Low FPS?</b></summary>
 
-- Allocate more RAM  
-- Update drivers  
-- Remove heavy mods  
+- Allocate more RAM in your launcher settings
+- Update GPU drivers
+- Clover is compatible with Sodium for additional performance gains
 
 </details>
 
